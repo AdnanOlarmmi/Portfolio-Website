@@ -1,0 +1,405 @@
+:root {
+  --color-primary: #ff014f;
+  --color-secondary: #f4f5f6;
+  --color-tertiary: #0d1013;
+  --color-dark: #1a1d23;
+  --color-darker: #1e1f21;
+  --color-gray: #f6f6f6;
+  --color-subtitle: #f9004d;
+  --color-border-white: #dadada;
+  --color-primary-gradient-from: #6a67ce;
+  --color-primary-gradient-to: #fc636b;
+  --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+  --background-color-2: #212428;
+  --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+  --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  --inner-shadow-white: 1px 4px 2px -3px #D1D9E6 inset, -1px -3px 3px -2px #ffffff inset;
+  --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --gradient-red-hover: linear-gradient(145deg, var(--color-primary-gradient-from), var(--color-primary-gradient-to));
+  --color-heading: #c4cfde;
+  --color-heading-wv: #1e2125;
+  --color-body: #878e99;
+  --color-body-white: #3c3e41;
+  --color-lightn: #c4cfde;
+  --color-midgray: #878787;
+  --color-light: #E4E6EA;
+  --color-lighter: #CED0D4;
+  --color-lightest: #F0F2F5;
+  --color-border: hsla(0, 0%, 100%, .2);
+  --color-white: #ffffff;
+  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-success: #3EB75E;
+  --color-danger: #FF0003;
+  --color-warning: #FF8F3C;
+  --color-info: #1BA2DB;
+  --color-border-white: #dce1e4;
+  --color-facebook: #3B5997;
+  --color-twitter: #1BA1F2;
+  --color-youtube: #ED4141;
+  --color-linkedin: #0077B5;
+  --color-pinterest: #E60022;
+  --color-instagram: #C231A1;
+  --color-vimeo: #00ADEF;
+  --color-twitch: #6441A3;
+  --color-discord: #7289da;
+  --color-separator: #878e9982;
+  --border-width: 2px;
+  --p-light: 300;
+  --p-regular: 400;
+  --p-medium: 500;
+  --p-semi-bold: 600;
+  --p-bold: 700;
+  --p-extra-bold: 800;
+  --p-black: 900;
+  --s-light: 300;
+  --s-regular: 400;
+  --s-medium: 500;
+  --s-semi-bold: 600;
+  --s-bold: 700;
+  --s-extra-bold: 800;
+  --s-black: 900;
+  --transition: 0.4s;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --font-size-b1: 18px;
+  --font-size-b2: 22px;
+  --font-size-b3: 14px;
+  --line-height-b1: 1.9;
+  --line-height-b2: 1.6;
+  --line-height-b3: 1.7;
+  --h1: 44px;
+  --h2: 36px;
+  --h3: 30px;
+  --h4: 24px;
+  --h5: 18px;
+  --h6: 16px;
+  --radius: 4px;
+}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  font-family: Avenir, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(43, 59, 86);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: #ecf0f3;
+
+}
+
+button {
+
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px solid #dce1e4;
+  position: sticky;
+  top: -5px;
+  z-index: 5;
+  background-color: #ecf0f3;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  gap: 1rem;
+}
+
+.imgwrapper {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.imgwrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+nav li {
+  transition: color 0.2s ease-in-out;
+}
+
+nav li:hover {
+  color: #fc636b;
+}
+
+.hero {
+  padding: 2rem 3rem;
+  gap: 9rem;
+}
+
+.hero__content {
+  margin-top: 5rem;
+  margin-left: 0;
+}
+
+.hero__welcome {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  color: #3c3e41;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #3c3e41;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero__name {
+  color: #ff014f;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.hero___img::before {
+  content: "";
+  position: absolute;
+  left: 60%;
+  width: 38%;
+  top: 50%;
+  bottom: 0;
+  border-radius: 0.5rem;
+  height: 85%;
+  z-index: -1;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+}
+
+.hero__accs {
+  margin-top: 10rem;
+}
+
+.hero__accs__social {
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-left: -1rem;
+}
+
+.hero__accs__social a,
+.features__item {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  padding: 1.3rem;
+  border-radius: 0.4rem;
+  position: relative;
+  z-index: 1;
+  bottom: 0;
+}
+
+.white {
+  filter: invert(1);
+}
+
+.hero__accs__social a:hover {
+  padding: 1.3rem;
+  border-radius: 0.4rem;
+  color: white;
+  bottom: 2px;
+}
+
+.myprofile__item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.angellistContainer:hover img {
+  filter: invert(1);
+}
+
+.angellist {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0 0.1009rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.angellist:hover img {
+  filter: invert(1);
+}
+
+.hero__accs__social a::before,
+.features__item::before {
+  background: linear-gradient(145deg, #6a67ce, #fc636b);
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  border-radius: 0.4rem;
+}
+
+.hero__accs__social a:hover::before,
+.features__item:hover::before {
+  opacity: 1;
+}
+
+.features {
+  padding: 2rem 3rem;
+}
+
+.features__container {
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.features__item {
+  flex-basis: 33%;
+  padding: 2.5rem 2rem;
+  gap: 2rem;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+}
+
+.features__item * {
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.features__item:hover * {
+  position: relative;
+  bottom: 0.4rem;
+  color: #fff;
+}
+
+.arrow {
+  visibility: hidden;
+  transition: color 0.05s ease-in-out;
+}
+
+.features__item:hover .arrow {
+  visibility: visible;
+}
+
+.features__container__icon {
+  color: #fc636b;
+}
+
+.myprofile__container {
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  border: 2px solid red;
+}
+
+.myprofile__item {
+  width: 33%;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.myprofile__item__img {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
+}
+
+.myprofile__item:hover img,
+.myprofile__item:focus img {
+  transform: scale(1.2);
+}
+
+.myprofile__subheading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3c3e41;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.myprofile__subheading:hover {
+  color: #ff014f;
+}
+
+.myprofile__arrow {
+  transform: rotate(-45deg);
+}
