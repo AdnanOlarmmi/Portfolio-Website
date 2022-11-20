@@ -1,3 +1,5 @@
+
+
 :root {
   --color-primary: #ff014f;
   --color-secondary: #f4f5f6;
@@ -294,10 +296,6 @@ nav li:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.angellist:hover img {
-  filter: invert(1);
-}
-
 .hero__accs__social a::before,
 .features__item::before {
   background: linear-gradient(145deg, #6a67ce, #fc636b);
@@ -336,14 +334,12 @@ nav li:hover {
 }
 
 .features__item * {
-  position: relative;
-  bottom: 0;
-  transition: all 0.2s ease-in-out;
+  transform: translate(0px, 0px);
+  transition: all 0.3s ease-in-out;
 }
 
 .features__item:hover * {
-  position: relative;
-  bottom: 0.4rem;
+  transform: translate(0px, -5px);
   color: #fff;
 }
 
@@ -360,10 +356,33 @@ nav li:hover {
   color: #fc636b;
 }
 
+.myprofile {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.myprofile__heading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #3c3e41;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.myprofile__subheading {
+  color: #f9004d;
+  letter-spacing: 2px;
+  line-height: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
 .myprofile__container {
   gap: 1.5rem;
   padding: 2rem 3rem;
-  border: 2px solid red;
+  text-align: left;
 }
 
 .myprofile__item {
@@ -382,13 +401,31 @@ nav li:hover {
   transition: transform 1s ease-in-out;
 }
 
-.myprofile__item:hover img,
-.myprofile__item:focus img {
-  transform: scale(1.2);
+.myprofile__item:hover img {
+  transform: scale(1.1);
 }
 
-.myprofile__subheading {
-  font-size: 1.3rem;
+.icon__like {
+  background-image: url('./assets/img/hoverlikeIcon.svg');
+  opacity: 0.15;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  padding: 0.1rem 1rem;
+}
+
+.icon__like:hover {
+  background-image: url('./assets/img/likeIcon.svg');
+  opacity: 0.4;
+}
+
+.icon__like:active {
+  opacity: 1;
+}
+
+.myprofile__item__subheading {
+  font-size: 1.4rem;
   font-weight: 600;
   color: #3c3e41;
   font-family: "Montserrat", sans-serif;
@@ -396,10 +433,30 @@ nav li:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.myprofile__subheading:hover {
+.myprofile__item__subheading:hover {
   color: #ff014f;
 }
 
-.myprofile__arrow {
-  transform: rotate(-45deg);
+.myprofile__item__subheading .myprofile__arrow {
+  transform: rotate(-45deg) scale(0) translate(-43px, 2px);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  color: #ff014f;
+  margin-left: 5px;
+}
+
+.myprofile__item__subheading:hover .myprofile__arrow {
+  transform: rotate(-45deg) scale(1) translate(-8px, 0);
+}
+
+.profile__likes {
+  justify-content: space-between;
+}
+
+.myresume {
+  gap: 2rem;
+}
+
+.myresume * {
+  cursor: pointer;
 }

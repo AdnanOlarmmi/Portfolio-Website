@@ -1,7 +1,8 @@
 /*eslint-disable*/
 import React from 'react';
-import { Link } from 'react-router-dom';
 import adnan from './../assets/img/pass.jpg';
+import ReactDOM from 'react-dom'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => (<header className='flex-row-center'>
     <div className='icon flex-row-center'>
@@ -13,25 +14,25 @@ const Header = () => (<header className='flex-row-center'>
     <nav>
       <ul className='flex-row'>
         <li>
-          <Link to="/">HOME</Link>
+          <AnchorLink href="#home">HOME</AnchorLink>
         </li>
         <li>
-          <Link to="/features">FEATURES</Link>
+          <AnchorLink offset='150' href="#features">FEATURES</AnchorLink>
         </li>
         <li>
-          <Link to="/portfolio">PORTFOLIO</Link>
+          <AnchorLink offset='150' href="#portfolio">PORTFOLIO</AnchorLink>
         </li>
         <li>
-          <Link to="/resume">RESUME</Link>
+          <AnchorLink href="#resume">RESUME</AnchorLink>
         </li>
         <li>
-          <Link to="/recommendation">RECOMMENDATION</Link>
+          <AnchorLink href="#recommendation">RECOMMENDATION</AnchorLink>
         </li>
         <li>
-          <Link to="/contact">CONTACT</Link>
+          <AnchorLink href="#contact">CONTACT</AnchorLink>
         </li>
         <li>
-          <Link to="/articles">ARTICLES</Link>
+          <AnchorLink href="#articles">ARTICLES</AnchorLink>
         </li>
       </ul>
     </nav>

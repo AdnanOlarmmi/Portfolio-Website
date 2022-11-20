@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Hero = () => (
-  <section className="hero flex-row">
+  <section id="home" className="hero flex-row">
     <div className="hero__content">
       <p className="hero__welcome">
         WELCOME TO MY PORTFOLIO WEBSITE
@@ -19,9 +19,9 @@ const Hero = () => (
         <div>
             <p>FIND WITH ME</p>
             <div className="hero__accs__social flex-row">
-                <a href="https://www.github.com/adnanolarmmi" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-                <a href="https://www.twitter.com/adnanishaqola/" target="_blank" rel="noreferrer"><TwitterIcon /></a>
-                <a href="https://www.linkedin.com/in/adnan-is-haq-olamilekan/" target="_blank" rel="noreferrer"><LinkedInIcon className="hero__social" /></a>
+                <a href="https://www.github.com/adnanolarmmi" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+                <a href="https://www.twitter.com/adnanishaqola/" target="_blank" rel="noopener  noreferrer"><TwitterIcon /></a>
+                <a href="https://www.linkedin.com/in/adnan-is-haq-olamilekan/" target="_blank" rel="noopener  noreferrer"><LinkedInIcon className="hero__social" /></a>
                 <a href="" className="angellistContainer">
                     <div className="angellist">
                       <img  src={angellist} alt='angellist' />  
