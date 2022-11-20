@@ -4,23 +4,18 @@ import Skills from './Skills';
 import Experience from './Experience';
 import Interview from './Interview';
 
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from 'react-router-dom';
-import ResumeHeader from './ResumeHeader';
+export const experienceYears =  new Date().getFullYear() - 2019;
 
 const MyResume = () => {
 
- const experienceYears =  new Date().getFullYear() - 2019;
+
 
  const resumes  = [ {
     name: 'Education',
     component: Education
  },
 {
-    name: 'Professional Skills',
+    name: 'Skills',
     component: Skills
 }, 
 {
@@ -33,18 +28,21 @@ const MyResume = () => {
 }];
 
 const [activeSlide, setActiveSlide] = React.useState(resumes[0].component);
+console.log(activeSlide.props.children);
 
 const handleClick = (index) => {
     const newSlide = resumes[index].component;
     setActiveSlide(newSlide);
-   
+    return activeSlide === resumes[index].component ? 'active' : '';
 }
 
   return (
-    <section className='myresume flex-column'> 
-        <div >
+    <section id='resume' className='myresume flex-column'>
+        <h6 className='myprofile__subheading'>{experienceYears}+ YEARS OF EXPERIENCE</h6>
+        <h1 className='myprofile__heading'>My Resume</h1>
+        <div className='myresume__item flex-row' >
             {resumes.map((resume, index)=>{
-            return <span onClick={()=>{handleClick(index)}}>{resume.name}</span>
+            return <span className={`myresume__heading ${activeSlide.props.children===resume.name? 'active':''}`} onClick={()=>{handleClick(index)}}>{resume.name==='Skills'?'Professional Skills':resume.name}</span>
         })}
         </div>
         <div>{activeSlide}</div>

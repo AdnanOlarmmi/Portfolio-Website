@@ -8,10 +8,13 @@ import MyResume from './MyResume';
 const App = () => (
   <Fragment>
     <Header />
-    <Hero />
-    <Features />
-    <MyProfile />
-    <MyResume />
+    <main>
+      <Hero />
+      <Features />
+      <MyProfile />
+      <MyResume />
+    </main>
+ 
   </Fragment>
 );
 

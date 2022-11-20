@@ -23,7 +23,7 @@ const Header = () => (<header className='flex-row-center'>
           <AnchorLink offset='150' href="#portfolio">PORTFOLIO</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#resume">RESUME</AnchorLink>
+          <AnchorLink offset='150' href="#resume">RESUME</AnchorLink>
         </li>
         <li>
           <AnchorLink href="#recommendation">RECOMMENDATION</AnchorLink>

@@ -9,7 +9,7 @@ const Features = () => (
         <h1 className='features__heading'>What I do</h1>
         <div className="features__container flex-row">
             <div className='features__item flex-column'>
-                <div className="features__container__icon"><BackupIcon /></div>
+                <div className="features__container__icon"><BackupIcon className='back' /></div>
                 <h3>Web Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
               
