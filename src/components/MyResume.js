@@ -29,11 +29,9 @@ const MyResume = () => {
 
 const [activeSlide, setActiveSlide] = React.useState(resumes[0].component);
 
-console.log();
 const handleClick = (index) => {
     const newSlide = resumes[index].component;
     setActiveSlide(newSlide);
-    console.log(activeSlide);
     return activeSlide === resumes[index].component ? 'active' : '';
 }
 
@@ -43,7 +41,7 @@ const handleClick = (index) => {
         <h1 className='myprofile__heading'>My Resume</h1>
         <div className='myresume__item flex-row' >
             {resumes.map((resume, index)=>{
-            return <span className={`myresume__heading ${activeSlide===resume.name? 'active':''}`} onClick={()=>{handleClick(index)}}>{resume.name==='Skills'?'Professional Skills':resume.name}</span>
+            return <span className={`myresume__heading ${activeSlide.props.dataSet===resume.name? 'active':''}`} onClick={()=>{handleClick(index)}}>{resume.name==='Skills'?'Professional Skills':resume.name}</span>
         })}
         </div>
         <div>{activeSlide}</div>

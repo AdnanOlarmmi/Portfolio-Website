@@ -14,7 +14,7 @@ const Header = () => (<header className='flex-row-center'>
     <nav>
       <ul className='flex-row'>
         <li>
-          <AnchorLink href="#home">HOME</AnchorLink>
+          <AnchorLink offset='150' href="#home">HOME</AnchorLink>
         </li>
         <li>
           <AnchorLink offset='150' href="#features">FEATURES</AnchorLink>
@@ -26,13 +26,13 @@ const Header = () => (<header className='flex-row-center'>
           <AnchorLink offset='150' href="#resume">RESUME</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#recommendation">RECOMMENDATION</AnchorLink>
+          <AnchorLink offset='150' href="#recommendation">RECOMMENDATION</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#articles" offset='150'>ARTICLES</AnchorLink>
         </li>
         <li>
           <AnchorLink href="#contact">CONTACT</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink href="#articles">ARTICLES</AnchorLink>
         </li>
       </ul>
     </nav>

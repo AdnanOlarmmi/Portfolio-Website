@@ -4,6 +4,8 @@ import Hero from './Hero';
 import Features from './Features';
 import MyProfile from './MyProfile';
 import MyResume from './MyResume';
+import Articles from './Articles';
+import Recommendation from './Recommendation';
 
 const App = () => (
   <Fragment>
@@ -13,6 +15,8 @@ const App = () => (
       <Features />
       <MyProfile />
       <MyResume />
+      <Recommendation/>
+      <Articles />
     </main>
  
   </Fragment>

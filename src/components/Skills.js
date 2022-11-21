@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
     return (
-      <section id='education' className='skill flex-row'>
+      <section dataSet="Skills" id='education' className='skill flex-row'>
           <div className='edu__item'>
               <h6 className='edu__year'>
                   Features

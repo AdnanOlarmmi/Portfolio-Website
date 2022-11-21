@@ -3,7 +3,7 @@ import React from 'react'
 const Interview = () => {
     const currentDate = new Date().getFullYear();
     return (
-      <section id='education' className='edu flex-row'>
+      <section dataSet="Interview" id='education' className='edu flex-row'>
           <div className='edu__item'>
               <h6 className='edu__year'>
                   1999 - {currentDate}
