@@ -8,7 +8,7 @@ const Experience = () => {
               <h6 className='edu__year'>
                   1999 - {currentDate}
               </h6>
-              <h1 className='edu__heading'>Education Quality
+              <h1 className='edu__heading'>Job Experience
               </h1>
               <div className='edu__container flex-column'>
                   <div className='edu__card flex-column'>
@@ -59,7 +59,7 @@ const Experience = () => {
           <h6 className='edu__year'>
                   2017 - {currentDate}
               </h6>
-              <h1 className='edu__heading'>Job Experience</h1>
+              <h1 className='edu__heading'>Technical Experience</h1>
               <div className='edu__container flex-column'>
               <div className='edu__card flex-column'>
                       <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>

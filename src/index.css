@@ -504,6 +504,22 @@ nav li:hover {
 
 .edu {
   text-align: left;
+  animation-name: jumpin;
+  animation-duration: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .edu__item {
@@ -604,4 +620,44 @@ nav li:hover {
 .edu__desc {
   font-size: 18px;
   line-height: 28px;
+}
+
+.skill__name {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.95;
+  line-height: 1.26;
+
+}
+
+.skill__design {
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-name: slidein;
+  background: linear-gradient(145deg, #fff 0%, #ff014f 100%);
+  border-radius: 14px;
+  height: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  gap: 7rem;
+  text-align: left;
+}
+
+@keyframes jumpin {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,110 +1,113 @@
 import React from 'react'
 
 const Skills = () => {
-    const currentDate = new Date().getFullYear();
     return (
-      <section id='education' className='edu flex-row'>
+      <section id='education' className='skill flex-row'>
           <div className='edu__item'>
               <h6 className='edu__year'>
-                  1999 - {currentDate}
+                  Features
               </h6>
-              <h1 className='edu__heading'>Education Quality
+              <h1 className='edu__heading'>Design and Soft Skill
               </h1>
-              <div className='edu__container flex-column'>
-                  <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-                  <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-                  <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div  className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-              </div>
+              <ul className='skill__list'>
+                <li className='skill__item  flex-column'>
+                    <p className='skill__name'>Figma</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Pixel Perfect</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Team Work</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Mentorship</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Communication</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Camaraderie</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+              </ul>
           </div>
           <div className='edu__item'>
-          <h6 className='edu__year'>
-                  2017 - {currentDate}
+              <h6 className='edu__year'>
+                  Features
               </h6>
-              <h1 className='edu__heading'>Job Experience</h1>
-              <div className='edu__container flex-column'>
-              <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-                  <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-                  <div className='edu__card flex-column'>
-                      <h3 className='edu__subheading'>BEng. in Computer Engineering</h3>
-                  <div className='edu__info flex-row'>
-                      <span className='edu__school'>
-                          University of Ilorin (2014 - 2019)
-                      </span>
-                      <span className='edu__loc'>
-                          Ilorin
-                      </span>
-                  </div>
-                  <p className='edu__desc'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                  </p>
-                  </div>
-              </div>
-  
+              <h1 className='edu__heading'>Development Skill
+              </h1>
+              <ul className='skill__list'>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>HTML5</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>CSS3</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>JavaScript</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>React</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Redux</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>StoryBook</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>NodeJS</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>ExpressJS</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>MongoDB</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>Mongoose</p>
+                    <span className='skill__design'></span>
+                </li>
+                <li className='skill__item flex-column'>
+                    <p className='skill__name'>TypeScript</p>
+                    <span className='skill__design'></span>
+                </li>
+              </ul>
           </div>
       </section>
     )
