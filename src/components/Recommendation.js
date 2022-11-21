@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import pass from './../assets/img/pass.jpg';
+import FormatQuoteOutlinedIcon from '@mui/icons-material/FormatQuoteOutlined';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/swiper.min.css'
 import 'swiper/modules/navigation/navigation.min.css';
@@ -37,7 +38,34 @@ const Recommendation = () => {
       pagination={{ clickable: true }}
     >
       <SwiperSlide>
-        <img src={pass}/>
+        <div className='reco__container flex-row'>
+        <div className='reco__info'>
+            <div className='img'>
+             <img src={pass}/>
+            </div>
+            <div className='info'>
+                <p className='info__red'>RAINBOW THEMES</p>
+                <p className='info__name'>Nevine Acotanza</p>
+                <p className='info__post'>Chief Operating Office</p>
+            </div>
+        </div>
+        <div className='reco__work'>
+            <div className='quotation'>
+            <FormatQuoteOutlinedIcon />
+            </div>
+            <div>
+                <div className='reco__work--ot'>
+                    <h4 className='reco__work--title'>Android App Development</h4>
+                    <p className='reco__work--loc'>via Upwork - Mar 4, 2015 - Aug 30, 2021</p>
+                </div>
+                <p className='reco__work--desc'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        </div>
       </SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>

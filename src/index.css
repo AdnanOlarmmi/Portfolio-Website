@@ -705,3 +705,7 @@ nav li:hover {
 .recommendation {
   margin-top: 10rem;
 }
+
+.reco__container {
+  gap: 2.5rem;
+}
