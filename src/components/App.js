@@ -6,6 +6,7 @@ import MyProfile from './MyProfile';
 import MyResume from './MyResume';
 import Articles from './Articles';
 import Recommendation from './Recommendation';
+import Contact from './Contact';
 
 const App = () => (
   <Fragment>
@@ -18,6 +19,9 @@ const App = () => (
       <Recommendation/>
       <Articles />
     </main>
+    <footer>
+      <Contact />
+    </footer>
  
   </Fragment>
 );

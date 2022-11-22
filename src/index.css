@@ -230,6 +230,7 @@ nav li:hover {
 .hero__subtitle {
   font-size: 1rem;
   line-height: 2rem;
+  margin-bottom: 10rem;
 }
 
 .hero___img::before {
@@ -247,7 +248,7 @@ nav li:hover {
 }
 
 .hero__accs {
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .hero__accs__social {
@@ -264,7 +265,8 @@ nav li:hover {
 
 .hero__accs__social a,
 .features__item,
-.edu__card {
+.edu__card,
+.contact__button {
   transition: all 0.2s ease-in-out;
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
   background: linear-gradient(145deg, #e2e8ec, #fff);
@@ -279,7 +281,8 @@ nav li:hover {
   filter: invert(1);
 }
 
-.hero__accs__social a:hover {
+.hero__accs__social a:hover,
+.contact__button:hover {
   padding: 1.3rem;
   border-radius: 0.4rem;
   color: white;
@@ -308,7 +311,8 @@ nav li:hover {
 .features__item::before,
 .edu__card::before,
 .swiper-button-next::before,
-.swiper-button-prev::before {
+.swiper-button-prev::before,
+.contact__button::before {
   background: linear-gradient(145deg, #6a67ce, #fc636b);
   content: "";
   width: 100%;
@@ -326,7 +330,8 @@ nav li:hover {
 .features__item:hover::before,
 .edu__card:hover::before,
 .swiper-button-next:hover::before,
-.swiper-button-prev:hover::before {
+.swiper-button-prev:hover::before,
+.contact__button:hover::before {
   opacity: 1;
 }
 
@@ -410,7 +415,10 @@ nav li:hover {
 .myprofile__item__img {
   border-radius: 1rem;
   overflow: hidden;
-  transition: transform 1s ease-in-out;
+}
+
+.myprofile__item:hover img {
+  transition: all 0.3s ease-in-out;
 }
 
 .myprofile__item:hover img {
@@ -691,7 +699,6 @@ nav li:hover {
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(255deg) brightness(99%) contrast(105%);
 }
 
-
 .swiper-button-prev {
   left: 87% !important;
 }
@@ -714,22 +721,26 @@ nav li:hover {
   height: max-content;
 }
 
-.reco__img {
+.reco__img,
+.contact__img {
   height: 50%;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
-.reco__img:hover img {
+.reco__img:hover img,
+.contact__img:hover img {
   transform: scale(1.1);
 }
 
-.reco__img img {
+.reco__img img,
+.contact__img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   transition: all 0.4s ease-in-out;
+  object-fit: cover;
+  display: block;
 }
 
 .info__red {
@@ -741,7 +752,8 @@ nav li:hover {
   font-weight: 500;
 }
 
-.info__name {
+.info__name,
+.contact__name {
   color: #1e2125;
   font-size: 24px;
   margin: 10px 0 0;
@@ -749,7 +761,8 @@ nav li:hover {
   line-height: 34px;
 }
 
-.info__post {
+.info__post,
+.contact__post {
   color: #3c3e41;
   font-size: 14px;
   font-family: Poppins, sans-serif;
@@ -798,7 +811,8 @@ nav li:hover {
   font-size: 16px;
 }
 
-.reco__work--desc {
+.reco__work--desc,
+.contact__desc {
   color: #3c3e41;
   font-size: 18px;
   line-height: 30px;
@@ -816,4 +830,83 @@ nav li:hover {
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
   padding: 1rem;
   border-radius: 6px;
+}
+
+footer {
+  border-top: 1px solid #dce1e4;
+  padding: 5rem 3rem;
+  margin-top: 5rem;
+}
+
+input,
+textarea {
+  display: block;
+  margin-top: 14px;
+  outline: none;
+  border: 2px solid #dce1e4;
+  border-radius: 3px;
+  width: 100%;
+  padding: 1rem;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff014f;
+}
+
+textarea {
+  resize: none;
+  height: 22rem;
+}
+
+label {
+  color: #3c3e41;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.contact__container {
+  gap: 2rem;
+}
+
+.contact__item {
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  height: max-content;
+  flex-basis: 33%;
+}
+
+.contact__info {
+  gap: 1rem;
+}
+
+.contact__form {
+  flex-basis: 66.6%;
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  padding: 2rem;
+}
+
+.name * {
+  flex-basis: 50%;
+}
+
+.name {
+  gap: 2rem;
+}
+
+.contact__button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
 }

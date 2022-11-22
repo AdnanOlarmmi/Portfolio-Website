@@ -26,7 +26,7 @@ const Recommendation = () => {
       return (
         <section id='recommendation' className='recommendation'>
             <div style={{textAlign: "center"}}>
-              <h6 className='myprofile__subheading'>HERE WHAT PEOPLE HAVE TO SAY ABOUT MY HUMBLE SELF</h6>
+              <h6 className='myprofile__subheading'>SEE WHAT PEOPLE HAVE TO SAY ABOUT MY HUMBLE SELF</h6>
         <h1 className='myprofile__heading'>Recommendations</h1>  
             </div>
             
@@ -52,7 +52,7 @@ const Recommendation = () => {
         </div>
         <div className='reco__work flex-column'>
             <div className='quotation'>
-            <FormatQuoteOutlinedIcon style={{transform: "scale(7)", marginTop: "2rem", marginLeft: "5rem", opacity:"0.2", marginBottom: "5px"}} />
+            <FormatQuoteOutlinedIcon style={{transform: "scale(9)", marginTop: "3rem", marginLeft: "5rem", opacity:"0.2", marginBottom: "5px"}} />
             </div>
             <div className='reco__minfo flex-column'>
                 <div className='reco__work--ot flex-row'>

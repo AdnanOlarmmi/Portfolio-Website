@@ -30,9 +30,6 @@ const Hero = () => (
                 </a>
             </div>
         </div>
-        <div>
-        
-        </div>
       </div>
     </div>
     <div className="hero___img">
