@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import pass from './../assets/img/pass.jpg';
 import FormatQuoteOutlinedIcon from '@mui/icons-material/FormatQuoteOutlined';
+import StarIcon from '@mui/icons-material/Star';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/swiper.min.css'
 import 'swiper/modules/navigation/navigation.min.css';
@@ -39,8 +40,8 @@ const Recommendation = () => {
     >
       <SwiperSlide>
         <div className='reco__container flex-row'>
-        <div className='reco__info'>
-            <div className='img'>
+        <div className='reco__info flex-column'>
+            <div className='reco__img'>
              <img src={pass}/>
             </div>
             <div className='info'>
@@ -49,14 +50,23 @@ const Recommendation = () => {
                 <p className='info__post'>Chief Operating Office</p>
             </div>
         </div>
-        <div className='reco__work'>
+        <div className='reco__work flex-column'>
             <div className='quotation'>
-            <FormatQuoteOutlinedIcon />
+            <FormatQuoteOutlinedIcon style={{transform: "scale(7)", marginTop: "2rem", marginLeft: "5rem", opacity:"0.2", marginBottom: "5px"}} />
             </div>
-            <div>
-                <div className='reco__work--ot'>
-                    <h4 className='reco__work--title'>Android App Development</h4>
-                    <p className='reco__work--loc'>via Upwork - Mar 4, 2015 - Aug 30, 2021</p>
+            <div className='reco__minfo flex-column'>
+                <div className='reco__work--ot flex-row'>
+                    <div>
+                    <p className='reco__work--title'>Android App Development</p>
+                    <p className='reco__work--loc'>via Upwork - Mar 4, 2015 - Aug 30, 2021</p> 
+                    </div>
+                    <span className='stars'>
+                        <StarIcon style={{color: "#ffab11", transform:"scale(0.8)"}}/>
+                        <StarIcon style={{color: "#ffab11",  transform:"scale(0.8)"}}/>
+                        <StarIcon style={{color: "#ffab11", transform:"scale(0.8)"}}/>
+                        <StarIcon style={{color: "#ffab11", transform:"scale(0.8)"}}/>
+                        <StarIcon style={{color: "#ffab11", transform:"scale(0.8)"}}/>
+                    </span>
                 </div>
                 <p className='reco__work--desc'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
