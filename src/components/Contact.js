@@ -25,7 +25,7 @@ const Contact = () => {
                     <p className='contact__desc'>
                         I am available for both freelance and full time hire. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then get in touch.
                     </p>
-                    <p>Phone: +234 813 003 6768</p>
+                    <p>Phone: <a href='tel:+2348130036768'>+234 813 003 6768</a></p>
                     <p>Email:<a href="mailto:adnanishaqola@gmail.com">adnanishaqola@gmail.com</a></p>
                     <div className="hero__accs">
                     <div>
@@ -34,7 +34,7 @@ const Contact = () => {
                             <a href="https://www.github.com/adnanolarmmi" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
                             <a href="https://www.twitter.com/adnanishaqola/" target="_blank" rel="noopener  noreferrer"><TwitterIcon /></a>
                             <a href="https://www.linkedin.com/in/adnan-is-haq-olamilekan/" target="_blank" rel="noopener  noreferrer"><LinkedInIcon className="hero__social" /></a>
-                            <a href="" className="angellistContainer">
+                            <a href="https://angel.co/u/adnan-is-haq" className="angellistContainer" target="_blank" rel="noopener  noreferrer">
                                 <div className="angellist">
                                 <img  src={angellist} alt='angellist' />  
                                 </div>  
@@ -45,27 +45,28 @@ const Contact = () => {
                 </div>
             </div>
             <div className='contact__form'>
-                <form>
+                <form action="https://formspree.io/f/mpzneaqq"
+						method="post">
                     <div className='name flex-row'>
                         <label>YOUR NAME
-                            <input type='text' placeholder='Name' />
+                            <input name='name' type='text' placeholder='Name' required />
                         </label>
                         <label>PHONE NUMBER
-                            <input type='tel' placeholder='Telephone number' />
+                            <input name='phoneNumber' type='tel' placeholder='Telephone number' required />
                         </label>
                     </div>
                     <div className='others'>
                         <label>EMAIL
-                            <input type='email' placeholder='Email' />
+                            <input name='email' type='email' placeholder='Email' required />
                         </label>
                         <label>SUBJECT
-                            <input type='text' placeholder='Subject' />
+                            <input name='subject' type='text' placeholder='Subject' required />
                         </label>
                         <label>YOUR MESSAGE
-                            <textarea placeholder='Message'></textarea>
+                            <textarea name='message' placeholder='Message' required></textarea>
                         </label> 
                     </div>
-                    <button className='contact__button' type='submit'>SAY HI TO ME</button>
+                    <button className='contact__button' type='submit' >SAY HI TO ME</button>
                 </form>
             </div>
         </div>

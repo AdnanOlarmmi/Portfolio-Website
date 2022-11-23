@@ -12,33 +12,31 @@ const Header = () => (<header className='flex-row-center'>
       <h4>Adnan Is-haq</h4>
     </div>
     <nav>
-      <ul className='flex-row'>
+      <ul className='nav flex-row'>
         <li>
-          <AnchorLink offset='150' href="#home">HOME</AnchorLink>
+          <AnchorLink offset='110' href="#home">HOME</AnchorLink>
         </li>
         <li>
-          <AnchorLink offset='150' href="#features">FEATURES</AnchorLink>
+          <AnchorLink offset='110' href="#features">FEATURES</AnchorLink>
         </li>
         <li>
-          <AnchorLink offset='150' href="#portfolio">PORTFOLIO</AnchorLink>
+          <AnchorLink offset='110' href="#portfolio">PORTFOLIO</AnchorLink>
         </li>
         <li>
-          <AnchorLink offset='150' href="#resume">RESUME</AnchorLink>
+          <AnchorLink offset='110' href="#resume">RESUME</AnchorLink>
         </li>
         <li>
-          <AnchorLink offset='150' href="#recommendation">RECOMMENDATION</AnchorLink>
+          <AnchorLink offset='110' href="#recommendation">RECOMMENDATION</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#articles" offset='150'>ARTICLES</AnchorLink>
+          <AnchorLink offset='110' href="#articles">ARTICLES</AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#contact">CONTACT</AnchorLink>
+          <AnchorLink offset='110' href="#contact">CONTACT</AnchorLink>
         </li>
       </ul>
     </nav>
     <div className='toggleLight'>
-      {/* <i className='fas fa-sun'></i>
-      <i className='fas fa-moon'></i> */}
       night mode
     </div>
   </header>);

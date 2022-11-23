@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
-import Interview from './Interview';
+import Soft from './Soft';
 
 export const experienceYears =  new Date().getFullYear() - 2019;
 
@@ -23,8 +23,8 @@ const MyResume = () => {
     component: Experience
 },
 {
-    name: 'Interview',
-    component: Interview
+    name: 'Soft Skills',
+    component: Soft
 }];
 
 const [activeSlide, setActiveSlide] = React.useState(resumes[0].component);
