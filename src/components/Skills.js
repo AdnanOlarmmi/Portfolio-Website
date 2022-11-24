@@ -4,7 +4,7 @@ const DevArr = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux', 'StoryBook', 'N
 
 const Skills = () => {
     return (
-      <section dataSet="Skills" id='education' className='skill flex-row'>
+      <section dataset="Skills" id='education' className='skill flex-row'>
           <div className='edu__item'>
               <h6 className='edu__year'>
                   Features

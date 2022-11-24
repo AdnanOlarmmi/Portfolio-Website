@@ -29,7 +29,7 @@ export const JobArr =[
 const Experience = () => {
     const currentDate = new Date().getFullYear();
     return (
-      <section dataSet="Experience" id='education' className='edu flex-row'>
+      <section dataset="Experience" id='education' className='edu flex-row'>
           <div className='edu__item'>
         <h6 className='edu__year'>
                 2017 - {currentDate}

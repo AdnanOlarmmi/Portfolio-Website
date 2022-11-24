@@ -32,7 +32,7 @@ const Education = () => {
 
     const currentDate = new Date().getFullYear();
   return (
-    <section dataSet='Education' id='education' className='edu flex-row'>
+    <section dataset='Education' id='education' className='edu flex-row'>
         <div className='edu__item'>
             <h6 className='edu__year'>
                 1999 - {currentDate}
@@ -44,7 +44,7 @@ const Education = () => {
                         return (
                             <div className='edu__card flex-column' key={edu.id}>
                                 <h3 className='edu__subheading'>{edu.subheading}</h3>
-                                <div className='edu__info flex-row'>
+                                <div className='edu__info'>
                                     <span className='edu__school'>
                                         {edu.school}
                                     </span>

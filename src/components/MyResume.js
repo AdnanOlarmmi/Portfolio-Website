@@ -39,9 +39,9 @@ const handleClick = (index) => {
     <section id='resume' className='myresume flex-column'>
         <h6 className='myprofile__subheading'>{experienceYears}+ YEARS OF EXPERIENCE</h6>
         <h1 className='myprofile__heading'>My Resume</h1>
-        <div className='myresume__item flex-row' >
+        <div className='myresume__item' >
             {resumes.map((resume, index)=>{
-            return <span className={`myresume__heading ${activeSlide.props.dataSet===resume.name? 'active':''}`} onClick={()=>{handleClick(index)}}>{resume.name==='Skills'?'Professional Skills':resume.name}</span>
+            return <span className={`myresume__heading ${activeSlide.props.dataset===resume.name? 'active':''}`} onClick={()=>{handleClick(index)}}>{resume.name==='Skills'?'Professional Skills':resume.name}</span>
         })}
         </div>
         <div>{activeSlide}</div>

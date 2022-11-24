@@ -4,7 +4,7 @@ const SoftArr = ['Figma', 'Pixel Perfection', 'Team Work', 'Mentorship', 'Commun
 
 const Soft = () => {
     return (
-      <section dataSet="Soft Skills" id='education' className='edu flex-row'>
+      <section dataset="Soft Skills" id='education' className='edu flex-row'>
         <div className='edu__item'>
               <h6 className='edu__year'>
                   Features

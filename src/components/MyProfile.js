@@ -98,7 +98,7 @@ const MyProfile = () => (
     <section id='portfolio' className='myprofile'>
         <h6 className='myprofile__subheading'>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h6>
         <h1 className='myprofile__heading'>My Portfolio</h1>
-        <div className='flex-row myprofile__container'>
+        <div className='myprofile__container'>
             {portfolioArr.map((item) => (
                 <div key={item.id} className='myprofile__item flex-column'>
                     <div className='myprofile__item__img'>

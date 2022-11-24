@@ -29,7 +29,7 @@ const Features = () => (
     <section id='features' className='features'>
         <h6 className='features__subheading'>Features</h6>
         <h1 className='features__heading'>What I do</h1>
-        <div className="features__container flex-row">
+        <div className="features__container">
             {featuresAll.map((feature) => (
                 <div className="features__item flex-column" key={feature.id}>
                     <div className="features__container__icon">
