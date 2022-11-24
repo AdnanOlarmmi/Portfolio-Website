@@ -6,12 +6,15 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const Header = () => {
 const burgerRef = useRef();
 const navRef = useRef();
-
+const cancel = useRef()
+const headerArr = ['home', 'features', 'portfolio', 'resume', 'recommendation', 'articles', 'contact'];
+const hamburger = ['first', 'second', 'third']
 const onClick = () => {
   for(let i=0; i<burgerRef.current.childNodes.length; i++) {
   burgerRef.current.childNodes[i].classList.toggle('change')
   }
   navRef.current.classList.toggle('open');
+  cancel.current.classList.toggle('cancel');
 }
 
   return (<header className='flex-row-center'>
@@ -21,35 +24,19 @@ const onClick = () => {
       </div>
       <h4 className='myname'>Adnan Is-haq</h4>
     </div>
-    <nav onClick={onClick} ref={navRef}>
+    <nav ref={navRef}>
       <ul className='nav'>
-        <li>
-          <AnchorLink offset='110' href="#home">HOME</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#features">FEATURES</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#portfolio">PORTFOLIO</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#resume">RESUME</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#recommendation">RECOMMENDATION</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#articles">ARTICLES</AnchorLink>
-        </li>
-        <li>
-          <AnchorLink offset='110' href="#contact">CONTACT</AnchorLink>
-        </li>
+        {headerArr.map((item)=>(<li>
+            <AnchorLink onClick={onClick} offset='110' href={`#${item}`}>{item.toLocaleUpperCase()}</AnchorLink>
+          </li>)
+        )}
       </ul>
     </nav>
-    <div onClick={onClick} ref={burgerRef} class="hamburger">
-          <span class="bar first-bar"></span>
-          <span class="bar second-bar"></span>
-          <span class="bar third-bar"></span>
+    <div ref={cancel} onClick={onClick} className='burgerContainer'>
+    <div ref={burgerRef} class="hamburger">
+          {hamburger.map((bar)=>(<span class={`bar ${bar}-bar`}></span>)
+          )}
+    </div>
     </div>
     <div className='toggleLight'>
       night mode

@@ -9,6 +9,7 @@ import leader from './../assets/img/leader.gif';
 import todo from './../assets/img/todo.gif';
 import awesome from './../assets/img/awesome.gif';
 import space from './../assets/img/space.gif'
+import quiz from './../assets/img/quiz.gif'
 
 
 const portfolioArr = [
@@ -55,7 +56,6 @@ const portfolioArr = [
     {
         id: 5,
         img: calc,
-        type: 'React',
         likes: '5',
         subheading: 'A Calculator App Built with React.',
         git: 'https://github.com/AdnanOlarmmi/Math-Magicians',
@@ -66,7 +66,6 @@ const portfolioArr = [
         id: 6,
         img: leader,
         type: 'JavaScript',
-        likes: '5',
         subheading: 'A Scoreboard to Add and Display Scores.',
         git: 'https://github.com/AdnanOlarmmi/Leaderboard',
         url: 'https://adnanolarmmi.github.io/Leaderboard/',
@@ -76,7 +75,6 @@ const portfolioArr = [
         id: 7,
         img: todo,
         type: 'JavaScript',
-        likes: '5',
         subheading: 'A Todo List App to Add and Delete Tasks.',
         git: 'https://github.com/AdnanOlarmmi/To-Do-List-App',
         url: 'https://adnanolarmmi.github.io/To-Do-List-App/',
@@ -86,11 +84,19 @@ const portfolioArr = [
         id: 8,
         img: awesome,
         type: 'JavaScript',
-        likes: '5',
         subheading: 'A BookStore App to Add and Delete Books.',
         git: 'https://github.com/AdnanOlarmmi/Awesome-Books-Es6',
         url: 'https://adnanolarmmi.github.io/Awesome-Books-Es6/',
         alt: 'Awesome Books',
+    },
+    {
+        id: 9,
+        img: quiz,
+        type: 'JavaScript',
+        subheading: 'Quiz app with IIFE and revealing module pattern.',
+        git: 'https://github.com/AdnanOlarmmi/Quiz-app',
+        url: 'https://adnanolarmmi.github.io/Quiz-app/',
+        alt: 'quiz app',
     },
 ]
 

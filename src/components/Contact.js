@@ -14,7 +14,7 @@ const Contact = () => {
             <h6 className='myprofile__subheading'>CONTACT</h6>
             <h1 className='myprofile__heading'>Contact With Me</h1>  
         </div>
-        <div className='contact__container flex-row'>
+        <div className='contact__container'>
             <div className='contact__item'>
                 <div className='contact__img'>
                     <img src={connect}/>
@@ -47,7 +47,7 @@ const Contact = () => {
             <div className='contact__form'>
                 <form action="https://formspree.io/f/mpzneaqq"
 						method="post">
-                    <div className='name flex-row'>
+                    <div className='name'>
                         <label>YOUR NAME
                             <input name='name' type='text' placeholder='Name' required />
                         </label>

@@ -64,8 +64,8 @@ const Recommendation = () => {
          {RecArr.map((rec)=> {
                 return(
                     <SwiperSlide key={rec.id}>
-                    <div className='reco__container flex-row'>
-                    <div className='reco__info flex-column'>
+                    <div className='reco__container'>
+                    <div className='reco__info'>
                         <div className='reco__img'>
                          <img src={rec.imgUrl}/>
                         </div>
@@ -80,7 +80,7 @@ const Recommendation = () => {
                         <FormatQuoteOutlinedIcon style={{transform: "scale(9)", marginTop: "3rem", marginLeft: "5rem", opacity:"0.2", marginBottom: "5px"}} />
                         </div>
                         <div className='reco__minfo flex-column'>
-                            <div className='reco__work--ot flex-row'>
+                            <div className='reco__work--ot'>
                                 <div>
                                 <p className='reco__work--title'>{rec.title}</p>
                                 <p className='reco__work--loc'>{rec.location}</p> 
