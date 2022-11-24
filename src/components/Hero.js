@@ -7,12 +7,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { experienceYears } from "./MyResume";
 
 const Hero = () => (
-  <section id="home" className="hero flex-row">
+  <section id="home" className="hero">
     <div className="hero__content">
       <p className="hero__welcome">
         WELCOME TO MY PORTFOLIO WEBSITE
       </p>
-      <h1 className="hero__title">Hi, I'm <span className="hero__name">Is-haq Adnan</span> <div className="type">
+      <h1 className="hero__title">Hi, I'm <span className="hero__name">Adnan Is-haq</span> <div className="type">
         <span>a&nbsp;</span> <ul className="dynamic__txt">
         <li><span>Front End developer.</span></li>
         <li><span>Back End Developer.</span></li>

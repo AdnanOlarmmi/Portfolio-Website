@@ -23,10 +23,10 @@ const Contact = () => {
                     <p className='contact__name'>Adnan Is-haq</p>
                     <p className='contact__post'>Frontend Developer</p>
                     <p className='contact__desc'>
-                        I am available for both freelance and full time hire. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then get in touch.
+                        I am available for freelance and full time hire. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then get in touch.
                     </p>
                     <p>Phone: <a href='tel:+2348130036768'>+234 813 003 6768</a></p>
-                    <p>Email:<a href="mailto:adnanishaqola@gmail.com">adnanishaqola@gmail.com</a></p>
+                    <p>Email: <a href="mailto:adnanishaqola@gmail.com">adnanishaqola@gmail.com</a></p>
                     <div className="hero__accs">
                     <div>
                         <p>FIND WITH ME</p>
@@ -52,7 +52,7 @@ const Contact = () => {
                             <input name='name' type='text' placeholder='Name' required />
                         </label>
                         <label>PHONE NUMBER
-                            <input name='phoneNumber' type='tel' placeholder='Telephone number' required />
+                            <input name='phoneNumber' type='tel' placeholder='Telephone number' />
                         </label>
                     </div>
                     <div className='others'>

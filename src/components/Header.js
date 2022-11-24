@@ -1,18 +1,28 @@
 /*eslint-disable*/
-import React from 'react';
+import React, { useRef } from 'react';
 import adnan from './../assets/img/pass.jpg';
-import ReactDOM from 'react-dom'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Header = () => (<header className='flex-row-center'>
+const Header = () => {
+const burgerRef = useRef();
+const navRef = useRef();
+
+const onClick = () => {
+  for(let i=0; i<burgerRef.current.childNodes.length; i++) {
+  burgerRef.current.childNodes[i].classList.toggle('change')
+  }
+  navRef.current.classList.toggle('open');
+}
+
+  return (<header className='flex-row-center'>
     <div className='icon flex-row-center'>
       <div className='imgwrapper'>
         <img className='myphoto' src={adnan} alt='AdnanPhoto'/>
       </div>
-      <h4>Adnan Is-haq</h4>
+      <h4 className='myname'>Adnan Is-haq</h4>
     </div>
-    <nav>
-      <ul className='nav flex-row'>
+    <nav onClick={onClick} ref={navRef}>
+      <ul className='nav'>
         <li>
           <AnchorLink offset='110' href="#home">HOME</AnchorLink>
         </li>
@@ -36,10 +46,15 @@ const Header = () => (<header className='flex-row-center'>
         </li>
       </ul>
     </nav>
+    <div onClick={onClick} ref={burgerRef} class="hamburger">
+          <span class="bar first-bar"></span>
+          <span class="bar second-bar"></span>
+          <span class="bar third-bar"></span>
+    </div>
     <div className='toggleLight'>
       night mode
     </div>
-  </header>);
+  </header>)};
 
 export default Header;
 
