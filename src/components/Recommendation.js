@@ -11,18 +11,28 @@ import 'swiper/modules/navigation/navigation.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 
 const RecArr = [
+    {
+        id: 1,
+        imgUrl: 'https://avatars.githubusercontent.com/u/31209490?v=4',
+        name: 'Mubarak Sulayman',
+        post: 'Senior Frontend Developer',
+        title: 'University Colleague',
+        location: 'via Unilorin - Mar 4, 2014 - Aug 30, 2019',
+        comment: 'A very sincere individual, always committed to all he does and love to explore knowledge.',
+        urlloc: 'LINKEDIN',
+   },
   {
-    id: 1,
-    imgUrl: 'https://avatars.githubusercontent.com/u/31209490?v=4',
-    name: 'Mubarak Sulayman',
-    post: 'Senior Frontend Developer',
-    title: 'University Colleague',
-    location: 'via Unilorin - Mar 4, 2014 - Aug 30, 2019',
-    comment: 'A very sincere individual, always committed to all he does and love to explore knowledge.',
+    id: 2,
+    imgUrl: 'https://avatars.githubusercontent.com/u/15995947?v=4',
+    name: 'Kolapo Akinrinlola',
+    post: 'Full-Stack Developer',
+    title: 'Microverse Coding Partner',
+    location: 'via Microverse - 2022',
+    comment: 'Working with Adnan has opened me to how a great-minded developer thinks. It was a lovely experience to have worked with Adnan because he\'s always open to efficiency, challenges, growth, and most of all time conscious. For a team to meet its target, on time, while relying on the developer to deliver, Adnan is someone I highly recommend for this role.',
     urlloc: 'LINKEDIN',
   },
   {
-    id: 2,
+    id: 3,
     imgUrl: 'https://ca.slack-edge.com/T47CT8XPG-U03P1MEPU13-a654676cdc34-512',
     name: 'Kareem Wilson',
     post: 'Full Stack Developer',
