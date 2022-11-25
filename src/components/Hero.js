@@ -15,7 +15,7 @@ const Hero = () => (
         WELCOME TO MY PORTFOLIO WEBSITE
       </p>
       <h1 className="hero__title">
-        Hi, I'm
+        Hi, I'm&nbsp;
         <span className="hero__name">Adnan Is-haq</span>
         {' '}
         <div className="type">
