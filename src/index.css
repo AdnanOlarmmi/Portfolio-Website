@@ -1,3 +1,26 @@
+:root {
+  --basic-color: #ecf0f3;
+  --border-color: #dce1e4;
+  --secondary-red: #fc636b;
+  --clear-white: #fff;
+  --primary-red: #ff014f;
+  --black-grey: #3c3e41;
+  --name-color: #3c3e41;
+  --grey-white: #d1d9e6;
+  --nonclear-white: #e2e8ec;
+  --primary-blue: #6a67ce;
+  --third-red: #f9004d;
+  --blue-white: #d9dee2;
+  --black-secondary: #1e2125;
+  --red-fiter: invert(15%) sepia(93%) saturate(7494%) hue-rotate(337deg) brightness(102%) contrast(101%);
+  --white-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(255deg) brightness(99%) contrast(105%);
+  --primary-boxshadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  --primary-background: linear-gradient(145deg, #d1d9e6, #fff);
+  --hover-background: linear-gradient(145deg, var(--primary-blue), var(--secondary-red));
+  --text-black: #3c3e41;
+  --angelist: invert(10%) sepia(15%) saturate(456%) hue-rotate(175deg) brightness(99%) contrast(94%);
+}
+
 *,
 *::before,
 *::after {
@@ -9,9 +32,13 @@
 a,
 a:visited,
 a:active {
-  color: inherit;
+  color: var(--black-secondary);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+
+p {
+  color: var(--text-black);
 }
 
 .nav a,
@@ -21,12 +48,11 @@ a:active {
 
 body {
   font-family: Avenir, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgb(43, 59, 86);
   font-size: 1em;
   font-weight: 400;
   line-height: 1.2;
-  background-color: #ecf0f3;
   overflow-x: hidden;
+  color: var(--text-black);
 }
 
 header {
@@ -34,16 +60,17 @@ header {
   justify-content: space-between;
   padding: 1.5rem 3rem;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 2px solid #dce1e4;
+  border-bottom: 2px solid var(--border-color);
   position: sticky;
   top: -5px;
   z-index: 7;
-  background-color: #ecf0f3;
-  color: #3c3e41;
+  background-color: var(--basic-color);
+  color: var(--black-grey);
 }
 
 main {
   padding: 2rem 3rem;
+  background-color: var(--basic-color);
 }
 
 ul {
@@ -73,7 +100,7 @@ ul {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid var(--clear-white);
 }
 
 .nav {
@@ -91,11 +118,11 @@ nav li {
 }
 
 nav li:hover {
-  color: #fc636b;
+  color: var(--secondary-red);
 }
 
 .hero {
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 7rem;
   justify-content: space-between;
   display: flex;
@@ -111,20 +138,20 @@ nav li:hover {
   font-size: 1rem;
   letter-spacing: 3px;
   margin-bottom: 1.5rem;
-  color: #3c3e41;
+  color: var(--black-grey);
 }
 
 .hero__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #3c3e41;
+  color: var(--name-color);
   font-family: "Montserrat", sans-serif;
 
 }
 
 .hero__name {
-  color: #ff014f;
+  color: var(--primary-red);
 }
 
 .hero__subtitle {
@@ -132,6 +159,7 @@ nav li:hover {
   line-height: 2rem;
   margin-bottom: 10rem;
   padding-right: 3rem;
+  color: var(--text-black);
 }
 
 .hamburger {
@@ -160,8 +188,8 @@ nav li:hover {
   border-radius: 0.5rem;
   height: 80%;
   z-index: -1;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
 }
 
 .hero__accs {
@@ -202,11 +230,11 @@ nav li:hover {
 .dynamic__txt li span::after {
   content: '';
   position: absolute;
-  background-color: #ecf0f3;
+  background-color: var(--basic-color);
   left: 0;
   height: 100%;
   width: 100%;
-  border-left: 3px solid #ff014f;
+  border-left: 3px solid var(--primary-red);
   animation: cursor 3s steps(100) infinite;
   margin-left: 7px;
 }
@@ -223,7 +251,7 @@ nav li:hover {
 }
 
 .features {
-  border-bottom: 2px solid #dce1e4;
+  border-bottom: 2px solid var(--border-color);
   margin-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -233,17 +261,18 @@ nav li:hover {
 .edu__card,
 .contact__button {
   transition: all 0.2s ease-in-out;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
   padding: 1.3rem;
   border-radius: 0.4rem;
   position: relative;
   z-index: 1;
   bottom: 0;
+  color: var(--black-secondary);
 }
 
 .white {
-  filter: invert(1);
+  filter: var(--white-filter);
 }
 
 .hero__accs__social a:hover,
@@ -261,8 +290,12 @@ nav li:hover {
   transition: all 0.2s ease-in-out;
 }
 
+.angellistContainer img {
+  filter: var(--angelist);
+}
+
 .angellistContainer:hover img {
-  filter: invert(1);
+  filter: var(--white-filter);
 }
 
 .angellist {
@@ -270,6 +303,7 @@ nav li:hover {
   height: 1.3rem;
   margin: 0 0.1009rem;
   transition: all 0.2s ease-in-out;
+
 }
 
 .hero__accs__social a::before,
@@ -278,7 +312,7 @@ nav li:hover {
 .swiper-button-next::before,
 .swiper-button-prev::before,
 .contact__button::before {
-  background: linear-gradient(145deg, #6a67ce, #fc636b);
+  background: var(--hover-background);
   content: "";
   width: 100%;
   height: 100%;
@@ -322,7 +356,7 @@ nav li:hover {
 
 .features__item:hover * {
   transform: translate(0, -7px);
-  color: #fff;
+  color: var(--clear-white);
 }
 
 .arrow {
@@ -340,23 +374,23 @@ nav li:hover {
 }
 
 .features__item img {
-  filter: invert(15%) sepia(93%) saturate(7494%) hue-rotate(337deg) brightness(102%) contrast(101%);
+  filter: var(--red-fiter);
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .features__item:hover img {
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(255deg) brightness(99%) contrast(105%);
+  filter: var(--white-filter);
 }
 
 .features__item__desc {
-  color: #3c3e41;
+  color: var(--text-black);
   line-height: 28px;
 }
 
 .arrow {
-  color: #ff014f;
+  color: var(--primary-red);
 }
 
 .myprofile {
@@ -369,7 +403,7 @@ nav li:hover {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #3c3e41;
+  color: var(--text-black);
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
 }
@@ -377,7 +411,7 @@ nav li:hover {
 .myprofile__subheading,
 .features__subheading,
 .edu__year {
-  color: #f9004d;
+  color: var(--third-red);
   letter-spacing: 2px;
   line-height: 1rem;
   font-weight: 500;
@@ -397,8 +431,8 @@ nav li:hover {
   flex-basis: 30%;
   padding: 2rem;
   border-radius: 2rem;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
   gap: 2rem;
   cursor: pointer;
 }
@@ -425,21 +459,21 @@ nav li:hover {
 .myprofile__item__subheading {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #3c3e41;
+  color: var(--text-black);
   font-family: "Montserrat", sans-serif;
   line-height: 2rem;
   transition: all 0.2s ease-in-out;
 }
 
 .myprofile__item__subheading:hover {
-  color: #ff014f;
+  color: var(--primary-red);
 }
 
 .myprofile__item__subheading .myprofile__arrow {
   transform: rotate(-45deg) scale(0) translate(-43px, 2px);
   transition: all 0.2s ease-in-out;
   position: relative;
-  color: #ff014f;
+  color: var(--primary-red);
   margin-left: 5px;
 }
 
@@ -457,7 +491,7 @@ nav li:hover {
 }
 
 .profile__type {
-  color: #ff014f;
+  color: var(--primary-red);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -471,23 +505,23 @@ nav li:hover {
 }
 
 .active {
-  color: #ff014f;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  color: var(--primary-red);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
   border-radius: 0.4rem;
 }
 
 .myresume__item {
   display: flex;
-  color: #3c3e41;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  color: var(--text-black);
+  box-shadow: var(--primary-boxshadow);
   border-radius: 0.4rem;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  background: var(--primary-background);
 }
 
 .myresume__item span:hover {
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
   border-radius: 0.4rem;
 }
 
@@ -533,7 +567,7 @@ nav li:hover {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.5rem;
-  color: black;
+  color: var(--black-secondary);
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
 }
@@ -541,7 +575,7 @@ nav li:hover {
 .edu__container {
   gap: 3rem;
   transition: all 2s ease-in-out;
-  border-left: 5px solid #dce1e4;
+  border-left: 5px solid var(--border-color);
   margin-right: 3rem;
   padding-left: 3rem;
 }
@@ -559,13 +593,13 @@ nav li:hover {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 5px solid #d9dee2;
-  background: #ecf0f3;
+  border: 5px solid var(--blue-white);
+  background: var(--basic-color);
   transition: all 0.4s ease-in-out;
 }
 
 .edu__card:hover .edu__subheading::before {
-  background: #ff014f;
+  background: var(--primary-red);
 }
 
 .edu__card::after {
@@ -575,7 +609,7 @@ nav li:hover {
   left: -2.9rem;
   width: 2.9rem;
   height: 5px;
-  background: #dce1e4;
+  background: var(--border-color);
 }
 
 .edu__card * {
@@ -583,7 +617,7 @@ nav li:hover {
 }
 
 .edu__card:hover * {
-  color: #fff;
+  color: var(--clear-white);
 }
 
 .edu__subheading {
@@ -595,15 +629,15 @@ nav li:hover {
 }
 
 .edu__card:hover .edu__loc {
-  color: #fff;
-  background-color: #ff014f;
+  color: var(--clear-white);
+  background-color: var(--primary-red);
   box-shadow: none;
 }
 
 .edu__info {
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 2.5rem;
   margin-bottom: 1.5rem;
   font-size: 14px;
@@ -613,9 +647,9 @@ nav li:hover {
 .edu__loc {
   padding: 0 1rem;
   line-height: 36px;
-  color: #ff014f;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background-color: #fff;
+  color: var(--primary-red);
+  box-shadow: var(--primary-boxshadow);
+  background-color: var(--clear-white);
   border-radius: 6px;
   font-weight: 500;
 }
@@ -639,7 +673,7 @@ nav li:hover {
 .skill__design {
   animation-duration: 0.7s;
   animation-name: slidein;
-  background: linear-gradient(145deg, #fff 0%, #ff014f 100%);
+  background: linear-gradient(145deg, var(--clear-white) 0%, var(--primary-red) 100%);
   border-radius: 14px;
   height: 0.7rem;
   margin-bottom: 1rem;
@@ -667,8 +701,8 @@ nav li:hover {
 .swiper-button-next,
 .swiper-button-prev {
   padding: 2rem;
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: var(--primary-boxshadow);
+  background: var(--primary-background);
   position: relative;
   border-radius: 0.4rem;
   top: 5% !important;
@@ -684,14 +718,14 @@ nav li:hover {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  filter: invert(15%) sepia(93%) saturate(7494%) hue-rotate(337deg) brightness(102%) contrast(101%);
+  filter: var(--red-fiter);
   transition: all 0.3s ease-in-out;
   scale: 0.6;
 }
 
 .swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(255deg) brightness(99%) contrast(105%);
+  filter: var(--white-filter);
 }
 
 .swiper-button-prev {
@@ -713,8 +747,8 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: var(--primary-background);
+  box-shadow: var(--primary-boxshadow);
   padding: 2rem;
   border-radius: 10px;
   height: max-content;
@@ -743,7 +777,7 @@ nav li:hover {
 }
 
 .info__red {
-  color: #ff014f;
+  color: var(--primary-red);
   font-family: Poppins, sans-serif;
   font-size: 12px;
   margin: 10px 0 22px;
@@ -753,7 +787,7 @@ nav li:hover {
 
 .info__name,
 .contact__name {
-  color: #1e2125;
+  color: var(--black-secondary);
   font-size: 24px;
   margin: 10px 0 0;
   font-weight: 500;
@@ -762,7 +796,7 @@ nav li:hover {
 
 .info__post,
 .contact__post {
-  color: #3c3e41;
+  color: var(--black-grey);
   font-size: 14px;
   font-family: Poppins, sans-serif;
 }
@@ -777,15 +811,15 @@ nav li:hover {
 
 .reco__minfo {
   padding: 2rem;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: var(--primary-background);
+  box-shadow: var(--primary-boxshadow);
   height: max-content;
   border-radius: 10px;
   justify-content: space-between;
 }
 
 .reco__work--title {
-  color: #1e2125;
+  color: var(--black-secondary);
   font-size: 30px;
   margin-bottom: 15px;
   line-height: 1.14;
@@ -801,18 +835,18 @@ nav li:hover {
   left: -4.5rem;
   width: 2.5rem;
   height: 5px;
-  background: #dce1e4;
+  background: var(--border-color);
 }
 
 .reco__work--loc {
-  color: #3c3e41;
+  color: var(--black-grey);
   font-weight: 500;
   font-size: 16px;
 }
 
 .reco__work--desc,
 .contact__desc {
-  color: #3c3e41;
+  color: var(--black-grey);
   font-size: 18px;
   line-height: 30px;
   padding-top: 2rem;
@@ -821,22 +855,22 @@ nav li:hover {
 .reco__work--ot {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 3.5rem;
   display: flex;
 }
 
 .stars {
-  background: linear-gradient(145deg, #e2e8ec, #fff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: var(--primary-background);
+  box-shadow: var(--primary-boxshadow);
   padding: 1rem;
   border-radius: 6px;
 }
 
 footer {
-  border-top: 1px solid #dce1e4;
-  padding: 5rem 3rem;
-  margin-top: 5rem;
+  border-top: 1px solid var(--border-color);
+  padding: 10rem 3rem 5rem;
+  background-color: var(--basic-color);
 }
 
 input,
@@ -844,7 +878,7 @@ textarea {
   display: block;
   margin-top: 14px;
   outline: none;
-  border: 2px solid #dce1e4;
+  border: 2px solid var(--border-color);
   border-radius: 6px;
   width: 100%;
   padding: 1rem;
@@ -855,7 +889,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #ff014f;
+  border-color: var(--primary-red);
 }
 
 textarea {
@@ -864,7 +898,7 @@ textarea {
 }
 
 label {
-  color: #3c3e41;
+  color: var(--black-grey);
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 500;
@@ -879,8 +913,8 @@ label {
 }
 
 .contact__item {
-  background: linear-gradient(145deg, #e2e8ec, #fff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: var(--primary-background);
+  box-shadow: var(--primary-boxshadow);
   padding: 2rem;
   border-radius: 10px;
   height: max-content;
@@ -900,7 +934,7 @@ label {
   content: "";
   position: absolute;
   width: 0%;
-  background-color: #ff014f;
+  background-color: var(--primary-red);
   height: 2px;
   left: 0;
   bottom: 1px;
@@ -913,13 +947,13 @@ label {
 }
 
 .contact__info p a:hover {
-  color: #ff014f;
+  color: var(--primary-red);
 }
 
 .contact__form {
   flex-basis: 66.6%;
-  background: linear-gradient(145deg, #e2e8ec, #fff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+  background: var(--primary-background);
+  box-shadow: var(--primary-boxshadow);
   padding: 2rem;
 }
 
@@ -964,11 +998,11 @@ label {
     top: 0;
     z-index: 1;
     flex-basis: 50%;
-    background-color: #ecf0f3;
+    background-color: var(--basic-color);
   }
 
   .navburger {
-    background-color: #3c3e41;
+    background-color: var(--black-grey);
   }
 
   .hamburger:hover {
@@ -977,7 +1011,7 @@ label {
   
   .hamburger span {
     display: block;
-    background-color: #ff014f;
+    background-color: var(--primary-red);
     margin: 0.4rem 0;
     height: 0.2rem;
     width: 2rem;
@@ -992,7 +1026,7 @@ label {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #3c3e41;
+    background-color: var(--black-grey);
   }
   
   .change.first-bar {
@@ -1031,20 +1065,19 @@ label {
   .hamburger {
     position: absolute;
     top: 0.7rem;
-    right: 2.5rem;
+    right: 2.2rem;
     z-index: 99999999;
-    background: linear-gradient(145deg, #e2e8ec, #fff);
-    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+    background: var(--primary-background);
+    box-shadow: var(--primary-boxshadow);
     padding: 1rem;
     display: block;
     border-radius: 50%;
   }
 
-
   .swiper-button-next,
-.swiper-button-prev {
-  display: none !important;
-}
+  .swiper-button-prev {
+    display: none !important;
+  }
 
 }
 
@@ -1097,11 +1130,13 @@ label {
   .contact__container {
     flex-direction: column;
   }
+
+  nav {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-
-
   main {
     padding: 2rem 0.5rem;
   }
@@ -1144,7 +1179,7 @@ label {
     right: 0.5rem;
   }
 
-  .hamburger span { 
+  .hamburger span {
     height: 0.1rem;
     width: 1rem;
     margin: 0.2rem 0;
@@ -1153,7 +1188,7 @@ label {
   .change.first-bar {
     top: 0.3rem;
   }
-  
+
   .change.third-bar {
     bottom: 0.3rem;
   }
@@ -1191,13 +1226,12 @@ label {
     font-family: Poppins, sans-serif;
     padding: 1rem 1rem;
   }
-  
+
   .edu__subheading::before {
     left: -2.5rem;
     top: 2.6rem;
   }
-  
-  
+
   .edu__card::after {
     left: -0.7rem;
     width: 0.7rem;
@@ -1233,9 +1267,8 @@ label {
     gap: 0;
   }
 
-  
-textarea {
-  height: 13rem;
-}
+  textarea {
+    height: 13rem;
+  }
 
 }

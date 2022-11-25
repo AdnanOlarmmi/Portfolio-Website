@@ -52,7 +52,7 @@ const Contact = () => {
                             <input name='name' type='text' placeholder='Name' required />
                         </label>
                         <label>PHONE NUMBER
-                            <input name='phoneNumber' type='tel' placeholder='Telephone number' />
+                            <input name='phoneNumber' type='tel' placeholder='Telephone Number' />
                         </label>
                     </div>
                     <div className='others'>
