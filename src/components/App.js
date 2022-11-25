@@ -1,3 +1,4 @@
+/*eslint-disable */
 import React, { Fragment, useState } from 'react';
 import Header from './Header';
 import Hero from './Hero';
@@ -17,38 +18,34 @@ const nightMode = {
   '--hover-background': 'linear-gradient(145deg, #1e2024, #23272b)',
   '--text-black': '#c4cfde',
   '--black-secondary': '#c4cfde',
-  '--angelist': 'invert(91%) sepia(5%) saturate(842%) hue-rotate(182deg) brightness(91%) contrast(90%)'
-}
+  '--angelist': 'invert(91%) sepia(5%) saturate(842%) hue-rotate(182deg) brightness(91%) contrast(90%)',
+};
 
 const dayMode = {
   '--nothing-nothing': 'blue',
 
-}
+};
 
-
-
-const App = () =>{ 
-  
+const App = () => {
   const [isitnite, setNight] = useState(false);
 
-
-
   return (
-  <div style={isitnite ? nightMode: dayMode}>
-    <Header isitnite={isitnite} setNight={setNight} />
-    <main>
-      <Hero />
-      <Features />
-      <MyProfile />
-      <MyResume />
-      <Recommendation/>
-      <Articles />
-    </main>
-    <footer>
-      <Contact />
-    </footer>
- 
-  </div>
-)};
+    <div style={isitnite ? nightMode : dayMode}>
+      <Header isitnite={isitnite} setNight={setNight} />
+      <main>
+        <Hero />
+        <Features />
+        <MyProfile />
+        <MyResume />
+        <Recommendation />
+        <Articles />
+      </main>
+      <footer>
+        <Contact />
+      </footer>
+
+    </div>
+  );
+};
 
 export default App;
