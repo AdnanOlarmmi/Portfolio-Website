@@ -26,11 +26,11 @@ const Contact = () => {
               I am available for freelance and full time hire. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then get in touch.
             </p>
             <p>
-              Phone:
+              Phone:&nbsp;
               <a href="tel:+2348130036768">+234 813 003 6768</a>
             </p>
             <p>
-              Email:
+              Email:&nbsp;
               <a href="mailto:adnanishaqola@gmail.com">adnanishaqola@gmail.com</a>
             </p>
             <div className="hero__accs">
