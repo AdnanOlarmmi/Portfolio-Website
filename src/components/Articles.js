@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import jsimg from './../assets/img/jsimg.jpg';
+import redux from './../assets/img/redux.jpg';
 import StarIcon from '@mui/icons-material/Star';
 
 const articleArr = [
@@ -9,19 +10,18 @@ const articleArr = [
         img: jsimg,
         type: 'JavaScript',
         subheading: '8 Tips to Master JScript: From Debugging to Scalability.',
-        git: 'https://github.com/AdnanOlarmmi/Technopreneur',
         url: 'https://medium.com/@olarmmi/8-tips-to-master-javascript-from-debugging-to-scalability-f4f1e2eda5e0',
         alt: 'JavaScript Tips'
     },
     {
         id: 2,
-        img: jsimg,
-        type: 'React-Redux',
-        subheading: 'An Online Book Store Conneas dfas cteds dffs to dsafa an API.',
-        git: 'https://github.com/AdnanOlarmmi/Bookstore',
-        url: 'https://adnanbookstore.netlify.app/',
-        alt: 'Bookstore App',
+        img: redux,
+        type: 'Redux',
+        subheading: '“Understand Redux as a beginner” — A Practical Guide for Beginners',
+        url: 'https://medium.com/@olarmmi/understand-redux-as-a-beginner-a-practical-guide-for-beginners-a852d8123cfb',
+        alt: 'Redux Tips'
     },
+
 ]
 
 const Articles = () => (
