@@ -56,7 +56,7 @@ const portfolioArr = [
   {
     id: 5,
     img: calc,
-    likes: '5',
+    type: 'React',
     subheading: 'A Calculator App Built with React.',
     git: 'https://github.com/AdnanOlarmmi/Math-Magicians',
     url: 'https://adnancalculator.netlify.app/',
