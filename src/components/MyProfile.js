@@ -11,6 +11,7 @@ import todo from '../assets/img/todo.gif';
 import awesome from '../assets/img/awesome.gif';
 import space from '../assets/img/space.gif';
 import quiz from '../assets/img/quiz.gif';
+import climate from '../assets/img/climate.gif';
 
 const portfolioArr = [
   {
@@ -35,6 +36,15 @@ const portfolioArr = [
   },
   {
     id: 3,
+    img: climate,
+    type: 'React-Redux',
+    subheading: 'Climate App for West African Countries.',
+    git: 'https://github.com/AdnanOlarmmi/Climate-App',
+    url: 'https://adnanclimateapp.netlify.app/',
+    alt: 'Climate App',
+  },
+  {
+    id: 4,
     img: foody,
     type: 'JavaScript',
     likes: '5',
@@ -44,7 +54,7 @@ const portfolioArr = [
     alt: 'Foody Restaurant App',
   },
   {
-    id: 4,
+    id: 5,
     img: space,
     type: 'React-Redux',
     likes: '5',
@@ -54,7 +64,7 @@ const portfolioArr = [
     alt: 'Space Travelers\' Hub App',
   },
   {
-    id: 5,
+    id: 6,
     img: calc,
     type: 'React',
     subheading: 'A Calculator App Built with React.',
@@ -63,7 +73,7 @@ const portfolioArr = [
     alt: 'Calculator App',
   },
   {
-    id: 6,
+    id: 7,
     img: leader,
     type: 'JavaScript',
     subheading: 'A Scoreboard to Add and Display Scores.',
@@ -72,7 +82,7 @@ const portfolioArr = [
     alt: 'Leaderboard App',
   },
   {
-    id: 7,
+    id: 8,
     img: todo,
     type: 'JavaScript',
     subheading: 'A Todo List App to Add and Delete Tasks.',
@@ -81,7 +91,7 @@ const portfolioArr = [
     alt: 'Todo List App',
   },
   {
-    id: 8,
+    id: 9,
     img: awesome,
     type: 'JavaScript',
     subheading: 'A BookStore App to Add and Delete Books.',
@@ -90,7 +100,7 @@ const portfolioArr = [
     alt: 'Awesome Books',
   },
   {
-    id: 9,
+    id: 10,
     img: quiz,
     type: 'JavaScript',
     subheading: 'Quiz app with IIFE and revealing module pattern.',
