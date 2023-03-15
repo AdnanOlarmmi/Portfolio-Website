@@ -6,20 +6,27 @@ const currentDate = new Date().getFullYear();
 export const JobArr = [
   {
     id: 1,
+    subheading: 'Code Reviewer',
+    school: 'Microverse (2023-Present)',
+    loc: 'Remote',
+    desc: `Reviewing code submissions from Microverse students, providing constructive feedback to help improve their coding skills. Ensuring code submissions met project requirements and best coding practices. Collaborating with other code reviewers to ensure consistency in feedback and approach. Participating in code review meetings to discuss feedback and identifying areas for improvement. Contributing to the development of code review guidelines and best practices.`,
+  },
+  {
+    id: 2,
     subheading: 'Front End Developer',
     school: 'Freelance (2019-Present)',
     loc: 'Remote',
     desc: `I have been working as a freelance front-end developer for over ${currentDate - 2019} years. I have worked on several projects for clients around the globe. I have also worked on several projects for myself and my friends.`,
   },
   {
-    id: 2,
+    id: 3,
     subheading: 'Mentor(Volunteer)',
     school: 'Microverse (2022)',
     loc: 'Remote',
     desc: 'I have been a mentor at Microverse for over 3 months. I have helped students with their projects and also helped them with their career path. I have also helped students with their job search.',
   },
   {
-    id: 3,
+    id: 4,
     subheading: 'Embedded Systems Engineer',
     school: 'Freelance (2017-Present)',
     loc: 'Remote',
