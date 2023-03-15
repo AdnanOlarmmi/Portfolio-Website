@@ -1,7 +1,7 @@
 /*eslint-disable */
 import React from 'react';
 
-const DevArr = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux', 'StoryBook', 'NodeJS', 'ExpressJS', 'MongoDB', 'Mongoose', 'TypeScript', 'Ruby'];
+const DevArr = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux', 'StoryBook', 'NodeJS', 'ExpressJS', 'MongoDB', 'Mongoose', 'TypeScript', 'Ruby', 'Ruby on Rails'];
 
 const Skills = () => (
   <section dataset="Skills" id="education" className="skill flex-row">
