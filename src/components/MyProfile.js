@@ -12,10 +12,21 @@ import awesome from '../assets/img/awesome.gif';
 import space from '../assets/img/space.gif';
 import quiz from '../assets/img/quiz.gif';
 import climate from '../assets/img/climate.gif';
+import motomate from '../assets/img/motomate.gif';
 
 const portfolioArr = [
   {
     id: 1,
+    img: motomate,
+    type: 'Rails and React',
+    likes: '5',
+    subheading: 'Motorcycle reservation App.',
+    git: 'https://github.com/AdnanOlarmmi/MotoMate-Frontend',
+    url: 'https://motomate.netlify.app/',
+    alt: 'MotoMate App',
+  },
+  {
+    id: 2,
     img: techno,
     type: 'JavaScript',
     likes: '5',
@@ -25,7 +36,7 @@ const portfolioArr = [
     alt: 'TechnoPrenuer Conference App',
   },
   {
-    id: 2,
+    id: 3,
     img: bookredux,
     type: 'React-Redux',
     likes: '5',
@@ -35,7 +46,7 @@ const portfolioArr = [
     alt: 'Bookstore App',
   },
   {
-    id: 3,
+    id: 4,
     img: climate,
     type: 'React-Redux',
     subheading: 'Climate App for West African Countries.',
@@ -44,7 +55,7 @@ const portfolioArr = [
     alt: 'Climate App',
   },
   {
-    id: 4,
+    id: 5,
     img: foody,
     type: 'JavaScript',
     likes: '5',
@@ -54,7 +65,7 @@ const portfolioArr = [
     alt: 'Foody Restaurant App',
   },
   {
-    id: 5,
+    id: 6,
     img: space,
     type: 'React-Redux',
     likes: '5',
@@ -64,7 +75,7 @@ const portfolioArr = [
     alt: 'Space Travelers\' Hub App',
   },
   {
-    id: 6,
+    id: 7,
     img: calc,
     type: 'React',
     subheading: 'A Calculator App Built with React.',
@@ -73,7 +84,7 @@ const portfolioArr = [
     alt: 'Calculator App',
   },
   {
-    id: 7,
+    id: 8,
     img: leader,
     type: 'JavaScript',
     subheading: 'A Scoreboard to Add and Display Scores.',
@@ -82,7 +93,7 @@ const portfolioArr = [
     alt: 'Leaderboard App',
   },
   {
-    id: 8,
+    id: 9,
     img: todo,
     type: 'JavaScript',
     subheading: 'A Todo List App to Add and Delete Tasks.',
@@ -91,7 +102,7 @@ const portfolioArr = [
     alt: 'Todo List App',
   },
   {
-    id: 9,
+    id: 10,
     img: awesome,
     type: 'JavaScript',
     subheading: 'A BookStore App to Add and Delete Books.',
@@ -100,7 +111,7 @@ const portfolioArr = [
     alt: 'Awesome Books',
   },
   {
-    id: 10,
+    id: 11,
     img: quiz,
     type: 'JavaScript',
     subheading: 'Quiz app with IIFE and revealing module pattern.',
