@@ -648,9 +648,9 @@ nav li:hover {
 .edu__loc {
   padding: 0 1rem;
   line-height: 36px;
-  color: var(--third-red);
+  color: var(--primary-red);
   box-shadow: var(--primary-boxshadow);
-  background-color: var(--clear-white);
+  background-color: var(--basic-color);
   border-radius: 6px;
   font-weight: 500;
 }
