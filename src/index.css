@@ -420,6 +420,10 @@ nav li:hover {
   margin-bottom: 1rem;
 }
 
+.features__subheading {
+  color: var(--primary-red);
+}
+
 .myprofile__container {
   display: flex;
   gap: 2.5rem;
