@@ -412,16 +412,12 @@ nav li:hover {
 .myprofile__subheading,
 .features__subheading,
 .edu__year {
-  color: var(--third-red);
+  color: var(--primary-red);
   letter-spacing: 2px;
   line-height: 1rem;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-.features__subheading {
-  color: var(--primary-red);
 }
 
 .myprofile__container {
