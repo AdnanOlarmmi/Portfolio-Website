@@ -9,14 +9,14 @@ export const EduArr = [
     subheading: 'BEng. Computer Engineering',
     school: 'University of Ilorin (2014 - 2019)',
     loc: 'Ilorin',
-    desc: 'Being a computer engineering graduate, I have gone through rigorous training in software development, algorithm, and data structures. I have also been exposed to the use of various programming languages such as C, C++, Java, Python, and JavaScript.',
+    desc: `Completed a five-year Bachelor of Engineering (B.Eng.) program in Computer Engineering at the University of Ilorin, where I gained practical, hands-on experience in designing, developing, and managing computer systems and networks. The coursework covered a broad range of topics, including computer science computer hardware and software, computer networks, programming, microcontrollers, embedded systems, computer graphics, and artificial intelligence.	Built a powerful Arduino system for measuring heartbeat and temperature accurately in real-time, achieving an accuracy rate of 98%.`,
   },
   {
     id: 2,
     subheading: 'Full Stack Web Development',
     school: 'Microverse (2022)',
     loc: 'California',
-    desc: 'Spent 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and Redux. Developed skills in remote pair-programming using GitHub, industry-standard gitflow, and daily standups to communicate and collaborate with international remote developers.',
+    desc: `Spent 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and Redux and writing Tests with Jest, React Testing Library, Capybara while following the agile and scrum methodologies. Developed skills in remote pair programming using GitHub, industry-standard git-flow, and daily standups to enable effective communication and collaboration with international remote developers.`,
   },
   {
     id: 3,
