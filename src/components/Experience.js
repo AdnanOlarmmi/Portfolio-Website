@@ -22,6 +22,41 @@ export const JobArr = [
 		} years. I have worked on several projects for clients around the globe.
     `,
 	},
+  {
+    id: 4,
+    subheading: 'Senior Front End Developer',
+    school: 'WorthIT (May 2023 - Dec 2023)',
+    loc: 'Remote',
+    desc: `
+    ● Held the development of the Atomicat Web Builder, resulting in a platform usable by over 5 million users to create more than 2 million websites.
+    ● Designed an intuitive drag-and-drop interface, reducing the average website creation time by 40%.
+    ● Implemented the logic for the preview and publish pages to show the exact page designed by the users on the builder page, which resulted in 100% accuracy of page built on the bulder page to be rendered on preview page and ultimately, the publish page.
+    ● Implemented Undo and Redo functionalities on the builder page. 
+    ● Implemented Next.js for server-side rendering, reducing page load times by an average of 25%.
+    ● Implemented React Internationalization technology to enable multilingual support, allowing diverse users to create websites in multiple languages.
+    ● Integrated Firebase for real-time collaboration, enabling 1,000 concurrent users to work simultaneously on a single project.
+    ● Utilized Redux for state management, resulting in a 30% reduction in app crashes.
+    ● Developed a robust SCSS-based theming system, leading to a 50% increase in user customization.
+    ● Engineered the platform for scalability, accommodating 10 million users with a 20% annual user growth rate.   
+    ● Conducted daily meetings with cross-functional teams to gather user feedback, resulting in 50 feature enhancements and a 25% increase in user satisfaction.   
+    ● Ensured cross-platform compatibility, resulting in a 60% improvement in mobile responsiveness.  
+    ● Collaborated with cross-functional teams to gather user feedback, resulting in 50 feature enhancements and a 25% increase in user satisfaction.   
+    ● Conducted rigorous testing, reducing the number of bugs by 40% through comprehensive quality assurance efforts.    
+    ● Created extensive documentation and provided training, resulting in a 30% reduction in support ticket volume.`
+  },
+  {
+    id: 5,
+    subheading: 'Led Front End Developer',
+    school: 'Solacely (May 2023 - Nov 2023)',
+    loc: 'Remote',
+    desc: `● Improved and suggested innovative features to the user interface, which increases user satisfaction by 30%.
+    ● Reorganized and cleaned previous code, to achieve up to 40% decrease in bugs rate.
+    ● Successfully led and collaborated with two front end interns, to develop and maintain a scalable and powerful web app for the startup prop-tech. The project resulted in a 25% increase in web app speed and good user interface and user experience performances.
+    ● Oversaw and review over several apps pull requests, reducing the average review time from 2 days to 12 hours, and improving the accuracy of code reviews resulting in a 15% decrease in bugs and errors in the working version of the app.
+    ● Optimized the enterprise web app for accessibility and scalability, achieving a maximum user capacity of 1,500 users without any system failures or downtime. The load time was improved by 3 seconds, leading to 40% of users reporting improved performance and usability.
+    ● Implemented agile methodologies to enhance project management, resulting in a 20% increase in productivity and a 15% decrease in project delivery time.
+    ● The user interface is responsive and adaptive, working well on various devices and screen sizes, while the user experience is intuitive and user-focused, making it easy for users to achieve their goals.`
+  },
 	{
 		id: 1,
 		subheading: 'Code Reviewer',
