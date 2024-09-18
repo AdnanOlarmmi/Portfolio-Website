@@ -99,7 +99,7 @@ const Experience = () => {
     <section dataset="Experience" id="education" className="edu flex-row">
       <div className="edu__item">
         <h6 className="edu__year">
-          2017 -
+          2018 -
           {' '}
           {currentDate}
         </h6>
