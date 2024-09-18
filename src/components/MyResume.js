@@ -8,17 +8,18 @@ import Soft from './Soft';
 export const experienceYears = new Date().getFullYear() - 2019;
 
 const MyResume = () => {
-  const resumes = [{
+  const resumes = [
+      {
+    name: 'Experience',
+    component: Experience,
+  },
+    {
     name: 'Education',
     component: Education,
   },
   {
     name: 'Skills',
     component: Skills,
-  },
-  {
-    name: 'Experience',
-    component: Experience,
   },
   {
     name: 'Soft Skills',
