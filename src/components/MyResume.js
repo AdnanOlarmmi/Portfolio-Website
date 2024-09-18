@@ -9,13 +9,9 @@ export const experienceYears = new Date().getFullYear() - 2019;
 
 const MyResume = () => {
   const resumes = [
-      {
+  {
     name: 'Experience',
     component: Experience,
-  },
-    {
-    name: 'Education',
-    component: Education,
   },
   {
     name: 'Skills',
@@ -24,6 +20,10 @@ const MyResume = () => {
   {
     name: 'Soft Skills',
     component: Soft,
+  },
+    {
+    name: 'Education',
+    component: Education,
   }];
 
   const [activeSlide, setActiveSlide] = React.useState(resumes[0].component);
