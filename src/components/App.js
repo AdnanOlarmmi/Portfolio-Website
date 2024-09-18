@@ -35,8 +35,8 @@ const App = () => {
       <main>
         <Hero />
         <Features />
-        <MyProfile />
         <MyResume />
+        <MyProfile />
         <Recommendation />
         <Articles />
       </main>
