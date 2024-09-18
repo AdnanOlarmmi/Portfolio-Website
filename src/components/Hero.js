@@ -4,7 +4,7 @@ import React from 'react';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import adnan from '../assets/img/mainpic.png';
+import adnan from '../assets/img/mainpic.jpeg';
 import angellist from '../assets/img/angellist.svg';
 import { experienceYears } from './MyResume';
 
