@@ -4,28 +4,10 @@ import React from 'react';
 const currentDate = new Date().getFullYear();
 
 export const JobArr = [
-	{
-		id: 2,
-		subheading: 'Front End Developer',
-		school: 'Freelance (August 2018-Present)',
-		loc: 'Remote',
-		desc: `
-●	Collaborated with clients from diverse industries to develop custom front-end solutions, meeting their specific needs and requirements.
-●	Designed and developed responsive, user-friendly websites and web applications, ensuring optimal performance and accessibility.
-●	Utilized HTML, CSS, and JavaScript to create visually appealing and interactive user interfaces.
-●	Incorporated modern front-end frameworks like React.js and Bootstrap, Vuetify and the likes to streamline development and enhance functionality.
-●	Conducted thorough testing and debugging to ensure cross-browser compatibility and optimal site performance.
-●	Communicated regularly with clients to provide project updates, gather feedback, and make necessary adjustments.
-●	Managed project timelines, resources, and budgets to deliver projects on time and within scope.
-● I have been working as a freelance front-end developer for over ${
-			currentDate - 2018
-		} years. I have worked on several projects for clients around the globe.
-    `,
-	},
   {
     id: 4,
     subheading: 'Senior Front End Developer',
-    school: 'WorthIT (May 2023 - Dec 2023)',
+    school: 'WorthIT (May 2023 - Present)',
     loc: 'Remote',
     desc: `
     ● Held the development of the Atomicat Web Builder, resulting in a platform usable by over 5 million users to create more than 2 million websites.
@@ -76,6 +58,24 @@ export const JobArr = [
 		loc: 'Remote',
 		desc: `●	Mentored and worked collaboratively with 3 junior web developers, providing technical support through code walkthrough and achieving a 30% increase in their productivity.
     ●	Provided advice and tips to 3 junior web developers on how to maintain motivation to maintain longevity in the program. The retention rate of junior web developers increased by 25% and their satisfaction score improved.
+    `,
+	},
+		{
+		id: 2,
+		subheading: 'Front End Developer',
+		school: 'Freelance (August 2018-Present)',
+		loc: 'Remote',
+		desc: `
+●	Collaborated with clients from diverse industries to develop custom front-end solutions, meeting their specific needs and requirements.
+●	Designed and developed responsive, user-friendly websites and web applications, ensuring optimal performance and accessibility.
+●	Utilized HTML, CSS, and JavaScript to create visually appealing and interactive user interfaces.
+●	Incorporated modern front-end frameworks like React.js and Bootstrap, Vuetify and the likes to streamline development and enhance functionality.
+●	Conducted thorough testing and debugging to ensure cross-browser compatibility and optimal site performance.
+●	Communicated regularly with clients to provide project updates, gather feedback, and make necessary adjustments.
+●	Managed project timelines, resources, and budgets to deliver projects on time and within scope.
+● I have been working as a freelance front-end developer for over ${
+			currentDate - 2018
+		} years. I have worked on several projects for clients around the globe.
     `,
 	},
 	// {
