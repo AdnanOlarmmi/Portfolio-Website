@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useRef } from 'react';
-import adnan from './../assets/img/pass.jpg';
+import adnan from './../assets/img/mainpic.png';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
