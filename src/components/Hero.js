@@ -41,7 +41,7 @@ const Hero = () => (
       </p>
       <div className="hero__accs">
         <div>
-          <p>FIND WITH ME</p>
+          <p>MY SOCIALS</p>
           <div className="hero__accs__social flex-row">
             <a href="https://www.github.com/adnanolarmmi" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
             <a href="https://www.twitter.com/adnanishaqola/" target="_blank" rel="noopener  noreferrer"><TwitterIcon /></a>
